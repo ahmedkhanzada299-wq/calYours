@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Calyours{% endblock %}
+
+{% block content %}
+  <!-- SEO: About Us page meta tags -->
+  <meta name="description" content="Learn more about Calyours, our mission, vision, and commitment to providing financial tools that simplify money management.">
+  <meta name="keywords" content="about Calyours, company information, financial tools, money management, budgeting solutions">
+  <meta name="robots" content="index, follow">
+
+  <!-- Structured Data for About Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Us",
+    "description": "About Calyours, a platform providing advanced financial calculators and money management tools.",
+    "url": "https://calyours.com/about_us",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Calyours",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://calyours.com/static/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <div class="content p-4">
+    <h1>About Us Page</h1>
+  </div>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Your Calculators App{% endblock %}
+
+{% block content %}
+  <!-- Page-specific SEO -->
+  <meta name="description" content="Welcome to Calyours! Your one-stop solution for financial calculators, budgeting tools, and investment tracking.">
+  <meta name="keywords" content="financial calculators, investment calculator, budgeting, expense tracker, savings calculator, Calyours">
+  <meta name="robots" content="index, follow">
+
+  <!-- Structured Data for Home Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Calyours",
+    "url": "https://calyours.com/",
+    "description": "Calyours offers powerful financial calculators and tools to help you plan your finances better.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Calyours",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://calyours.com/static/logo.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://calyours.com/search?query={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <div class="centered-container">
+    <div class="content animate__animated animate__fadeIn">
+      <h1 class="mb-4">Welcome to Calyours</h1>
+      <p class="lead">Your comprehensive FIN calculators solution.</p>
+      <p>Click the menu items in the navigation bar to explore our financial tools and resources.</p>
+      
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-calculator-fill display-4 text-primary mb-3"></i>
+              <h5 class="card-title">FIN Calculator</h5>
+              <p class="card-text">Perform various financial calculations with our easy-to-use calculator.</p>
+              <a href="calculator" class="btn btn-primary mt-2">Try Calculator</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-info-circle-fill display-4 text-info mb-3"></i>
+              <h5 class="card-title">About Us</h5>
+              <p class="card-text">Learn more about our mission and the team behind Calyours.</p>
+              <a href="/about_us" class="btn btn-info mt-2 text-white">About Us</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-telephone-fill display-4 text-success mb-3"></i>
+              <h5 class="card-title">Contact Us</h5>
+              <p class="card-text">Have questions? Reach out to our support team for assistance.</p>
+              <a href="/contact_us" class="btn btn-success mt-2">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

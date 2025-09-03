@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Calyours{% endblock %}
+
+{% block content %}
+  <!-- SEO: Contact page meta tags -->
+  <meta name="description" content="Get in touch with Calyours. Contact us for support, inquiries, or feedback about our financial calculators and tools.">
+  <meta name="keywords" content="contact Calyours, support, financial calculator help, inquiries, feedback">
+  <meta name="robots" content="index, follow">
+
+  <!-- Structured Data for Contact Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Us",
+    "description": "Get in touch with Calyours for support, inquiries, or feedback about our financial calculators.",
+    "url": "https://calyours.com/contact_us",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Calyours",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://calyours.com/static/logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-XXX-XXXXXXX",
+        "contactType": "customer support",
+        "availableLanguage": ["English"]
+      }
+    }
+  }
+  </script>
+
+  <div class="content p-4">
+    <h1>Contact Us Page</h1>
+  </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Article - Calyours{% endblock %}
+
+{% block content %}
+  <!-- SEO: Blogs page meta tags -->
+  <meta name="description" content="Read the latest blogs from Calyours on financial planning, budgeting tips, investment strategies, and smart money management.">
+  <meta name="keywords" content="FIN Article, budgeting tips, investment Article, money management, finance news">
+  <meta name="robots" content="index, follow">
+
+  <!-- Structured Data for Blog Listing Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "name": "Calyours Article",
+    "description": "Latest articles and insights from Calyours to help you manage finances better.",
+    "url": "https://calyours.com/Article",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Calyours",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://calyours.com/static/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <div class="content p-4">
+    <h1>Article Page</h1>
+  </div>
+{% endblock %}

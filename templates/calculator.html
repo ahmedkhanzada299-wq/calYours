@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Calculators - Calyours{% endblock %}
+
+{% block content %}
+  <!-- SEO: Calculator page meta tags -->
+  <meta name="description" content="Use Calyours calculators to easily perform financial calculations, manage budgets, and plan your future.">
+  <meta name="keywords" content="financial calculators, loan calculator, EMI calculator, budget calculator, investment calculator">
+  <meta name="robots" content="index, follow">
+
+  <!-- Structured Data for Calculator Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Calculators",
+    "description": "A collection of financial calculators from Calyours to simplify your budgeting and planning.",
+    "url": "https://calyours.com/calculator",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Calyours",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://calyours.com/static/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <div class="content p-4">
+    <h1>Calculator Page</h1>
+  </div>
+{% endblock %}
