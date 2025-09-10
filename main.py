@@ -15,10 +15,10 @@ class NoCacheStaticFiles(StaticFiles):
 app = FastAPI()
 
 # Templates and static directory config
-templates = Jinja2Templates(directory=r"F:/Jamal/FinaceApp/app/templates")
+templates = Jinja2Templates(directory=r"/var/www/calYours/templates")
 templates.env.auto_reload = True  # Enable auto reload
 templates.env.cache = {}          # Disable caching
-app.mount("/static", NoCacheStaticFiles(directory=r"F:/Jamal/FinaceApp/app/static"), name="static")
+app.mount("/static", NoCacheStaticFiles(directory=r"/var/www/calYours/static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
