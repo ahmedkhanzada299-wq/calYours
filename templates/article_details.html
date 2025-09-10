@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} - Calyours{% endblock %}
+
+{% block head %}
+<meta name="description" content="{{ article.excerpt }}">
+<meta name="robots" content="index, follow">
+{% endblock %}
+
+{% block content %}
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb-article">
+  <a href="/">Home</a> <span>&gt;</span>
+  <a href="/articles">Articles</a> <span>&gt;</span>
+  <span>{{ article.title }}</span>
+</nav>
+
+<article class="article-page-article" id="article-{{ article.id }}">
+  <!-- Title -->
+  <h1 class="article-title-article">{{ article.title }}</h1>
+  <p class="article-meta-article">✍️ By <b>{{ article.author }}</b> | 📅 {{ article.date }}</p>
+
+  <!-- Main Image -->
+  <div class="article-main-img-wrapper">
+    <img src="{{ article.titleImage }}" alt="{{ article.title }}" class="article-main-img-article">
+  </div>
+
+  <!-- Article Content -->
+  <div class="article-body-article">
+    {% for section in article.content %}
+      <section class="article-section-article">
+        {% if section.subtitle %}
+          <h2 class="article-subtitle-article">{{ section.subtitle }}</h2>
+        {% endif %}
+
+        {% if section.paragraphs %}
+          {% for para in section.paragraphs %}
+            <p class="article-para-article">{{ para }}</p>
+          {% endfor %}
+        {% endif %}
+
+        {% if section.bullets %}
+          <ul class="article-bullets-article">
+            {% for bullet in section.bullets %}
+              <li>{{ bullet }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if section.images %}
+          <div class="article-subimages-article">
+            {% for img in section.images %}
+              <img src="{{ img }}" alt="Related image" class="article-sub-img-article">
+            {% endfor %}
+          </div>
+        {% endif %}
+      </section>
+    {% endfor %}
+  </div>
+</article>
+
+{% endblock %}

@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 
 {% block title %}Contact Us - Calyours{% endblock %}
+{% block head %}
+{# ---- Head Block (SEO + JSON-LD only) ---- #}
 
-{% block content %}
-  <!-- SEO: Contact page meta tags -->
+  <!-- Page-specific SEO -->
   <meta name="description" content="Get in touch with Calyours. Contact us for support, inquiries, or feedback about our financial calculators and tools.">
   <meta name="keywords" content="contact Calyours, support, financial calculator help, inquiries, feedback">
   <meta name="robots" content="index, follow">
@@ -13,9 +14,9 @@
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact Us",
-    "description": "Get in touch with Calyours for support, inquiries, or feedback about our financial calculators.",
+    "name": "Contact Us - Calyours",
     "url": "https://calyours.com/contact_us",
+    "description": "Contact Calyours for support, customer inquiries, or feedback regarding financial calculators and budgeting tools.",
     "publisher": {
       "@type": "Organization",
       "name": "Calyours",
@@ -33,7 +34,85 @@
   }
   </script>
 
-  <div class="content p-4">
-    <h1>Contact Us Page</h1>
+<!-- Contact Section -->
+<section class="contact-section container my-5 ">
+  <h1 class="text-center fw-bold mb-3 contact-heading mt-5">Get in Touch</h1>
+  <p class="text-center text-muted mb-5 contact-subheading">
+    We'd love to hear from you! Whether you have a question, feedback, or just want to say hello — reach out below.
+  </p>
+
+  <div class="row">
+    <!-- Contact Form -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-sm p-4 contact-card">
+        <h4 class="mb-3">Send us a message</h4>
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+        <div id="formAlert" class="alert mt-3 d-none"></div>
+      </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="col-md-6">
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="card p-3 shadow-sm contact-card h-100">
+            <h5><i class="bi bi-envelope-fill text-primary"></i> Email</h5>
+            <p>calyoursinfo@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card p-3 shadow-sm contact-card h-100">
+            <h5><i class="bi bi-telephone-fill text-success"></i> Phone</h5>
+            <p>+18658761555</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card p-3 shadow-sm contact-card h-100">
+            <h5><i class="bi bi-geo-alt-fill text-danger"></i> Address</h5>
+            <p>	Chicago, USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
+  <!-- Social Links -->
+  <div class="text-center mt-5">
+    <h5>Follow Us</h5>
+    <a href="#" class="btn social-btn facebook mx-2"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="btn social-btn twitter mx-2"><i class="bi bi-twitter"></i></a>
+    <a href="#" class="btn social-btn instagram mx-2"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="btn social-btn linkedin mx-2"><i class="bi bi-linkedin"></i></a>
+  </div>
+</section>
+
+<!-- JS for Form -->
+<script>
+  const form = document.getElementById("contactForm");
+  const alertBox = document.getElementById("formAlert");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    alertBox.classList.remove("d-none", "alert-danger");
+    alertBox.classList.add("alert", "alert-success");
+    alertBox.innerText = "✅ Thank you! Your message has been sent successfully.";
+    form.reset();
+  });
+</script>
 {% endblock %}

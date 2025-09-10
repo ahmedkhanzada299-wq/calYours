@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Loan / EMI Calculator - Calyours{% endblock %}
+
+{% block head %}
+<meta name="description" content="Calculate your EMI easily with Calyours Loan Calculator. Plan your loans smartly with monthly installment breakdown.">
+<meta name="keywords" content="loan calculator, EMI calculator, personal loan, car loan, home loan">
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Loan / EMI Calculator",
+  "description": "Calculate your EMI easily with Calyours Loan Calculator.",
+  "url": "https://calyours.com/loan-calculator",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Calyours",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://calyours.com/static/logo.png"
+    }
+  }
+}
+</script>
+
+<link rel="stylesheet" href="/static/css/loan_calculator.css">
+{% endblock %}
+
+{% block content %}
+<div class="loan-calculator">
+  <h1>Loan / EMI Calculator</h1>
+  <p class="subtitle">Easily calculate your monthly installment for loans</p>
+
+  <div class="calc-form">
+    <label>Loan Amount (P)</label>
+    <input type="number" id="loanAmount" placeholder="Enter loan amount">
+
+    <label>Annual Interest Rate (%)</label>
+    <input type="number" id="interestRate" placeholder="Enter annual interest">
+
+    <label>Tenure (Months)</label>
+    <input type="number" id="loanTenure" placeholder="Enter number of months">
+
+<label>Select Currency</label>
+<select id="currency" title="currency">
+  <!-- American -->
+  <option value="$">US Dollar ($)</option>
+  <option value="C$">Canadian Dollar (C$)</option>
+  <option value="A$">Australian Dollar (A$)</option>
+  <option value="R$">Brazilian Real (R$)</option>
+  <option value="Mex$">Mexican Peso (Mex$)</option>
+
+  <!-- European -->
+  <option value="€">Euro (€)</option>
+  <option value="£">British Pound (£)</option>
+  <option value="CHF">Swiss Franc (CHF)</option>
+  <option value="kr">Swedish Krona (SEK kr)</option>
+  <option value="zł">Polish Zloty (PLN zł)</option>
+
+  <!-- Asian -->
+  <option value="₹">Indian Rupee (₹)</option>
+  <option value="PKR">Pakistani Rupee (PKR)</option>
+  <option value="¥">Japanese Yen (¥)</option>
+  <option value="₩">South Korean Won (₩)</option>
+  <option value="د.إ">UAE Dirham (AED د.إ)</option>
+
+  <!-- Middle East & Others -->
+  <option value="﷼">Saudi Riyal (SAR ﷼)</option>
+  <option value="EGP">Egyptian Pound (EGP)</option>
+  <option value="TRY">Turkish Lira (TRY ₺)</option>
+  <option value="R">South African Rand (R)</option>
+</select>
+
+
+    <button id="calculateBtn">Calculate EMI</button>
+  </div>
+
+  <div class="result-box hidden" id="resultBox">
+    <h2>Result</h2>
+    <p id="emiResult" class="emi-result"></p>
+  </div>
+
+  <div class="history">
+    <h3>Previous Calculations</h3>
+    <ul id="calcHistory"></ul>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}SIP / Investment Goal Calculator - Calyours{% endblock %}
+
+{% block head %}
+<meta name="description" content="Plan your investments with the SIP Calculator. Find out how much you need to invest monthly to achieve your wealth goals.">
+<meta name="keywords" content="sip calculator, investment calculator, goal planning, monthly investment, wealth calculator">
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "SIP / Investment Goal Calculator",
+  "description": "Easily calculate monthly investment required to reach your financial goals using SIP.",
+  "url": "https://calyours.com/sip-calculator",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Calyours",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://calyours.com/static/logo.png"
+    }
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="Mortgage-Emi-calculator-page">
+  <h1 class="page-title">💰 SIP / Investment Goal Calculator</h1>
+  <p class="subtitle">Find out how much you need to invest monthly to achieve your future wealth target.</p>
+
+  <div class="calc-container">
+    <label>Target Wealth (Future Value)</label>
+    <input type="number" id="targetWealth" placeholder="Enter target wealth (e.g., 5000000)">
+
+    <label>Expected Annual Return Rate (%)</label>
+    <input type="number" id="annualReturn" placeholder="Enter annual return (e.g., 12)">
+
+    <label>Investment Duration (Years)</label>
+    <input type="number" id="durationYears" placeholder="Enter number of years">
+
+    <label>Select Currency</label>
+    <select id="currency" title="currency">
+      <!-- American -->
+      <option value="$">US Dollar ($)</option>
+      <option value="C$">Canadian Dollar (C$)</option>
+      <option value="A$">Australian Dollar (A$)</option>
+      <option value="R$">Brazilian Real (R$)</option>
+      <option value="Mex$">Mexican Peso (Mex$)</option>
+
+      <!-- European -->
+      <option value="€">Euro (€)</option>
+      <option value="£">British Pound (£)</option>
+      <option value="CHF">Swiss Franc (CHF)</option>
+      <option value="kr">Swedish Krona (SEK kr)</option>
+      <option value="zł">Polish Zloty (PLN zł)</option>
+
+      <!-- Asian -->
+      <option value="₹">Indian Rupee (₹)</option>
+      <option value="PKR">Pakistani Rupee (PKR)</option>
+      <option value="¥">Japanese Yen (¥)</option>
+      <option value="₩">South Korean Won (₩)</option>
+      <option value="د.إ">UAE Dirham (AED د.إ)</option>
+
+      <!-- Middle East & Others -->
+      <option value="﷼">Saudi Riyal (SAR ﷼)</option>
+      <option value="EGP">Egyptian Pound (EGP)</option>
+      <option value="TRY">Turkish Lira (TRY ₺)</option>
+      <option value="R">South African Rand (R)</option>
+    </select>
+
+    <button id="calculateSIPBtn">Calculate SIP</button>
+
+    <div id="resultBox" class="result-box hidden">
+      <h2>Result</h2>
+      <p id="sipResult"></p>
+    </div>
+
+    <h3>Previous Calculations</h3>
+    <ul id="calcHistory"></ul>
+  </div>
+
+  <!-- Article Section -->
+  <div class="article-section">
+    <h2>📘 Why use SIP Calculator?</h2>
+    <div class="article-content">
+      <p>
+        A <strong>SIP Calculator</strong> helps you calculate the <span class="highlight-text">monthly investment</span> 
+        required to reach your <em>future wealth goals</em> over a specific period of time.
+      </p>
+
+      <p>
+        By entering your <strong>target wealth, expected returns, and investment duration</strong>, 
+        you can plan your finances and ensure you stay on track for your goals.
+      </p>
+
+      <p>
+        SIP calculators are especially useful for <span class="highlight-text">retirement planning, education funds, or wealth creation</span>.
+      </p>
+
+      <div class="tips-box">
+        <h3>💡 Quick Tips:</h3>
+        <ul>
+          <li>Start SIPs early for maximum compounding benefits.</li>
+          <li>Review your expected return rate regularly.</li>
+          <li>Increase SIP contributions as your income grows.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- External JS -->
+<script src="{{ url_for('static', path='/js/sip_calculator.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}EMI & Mortgage Calculator - Calyours{% endblock %}
+
+{% block head %}
+<meta name="description" content="Easily calculate your EMI or Mortgage payments with Calyours smart calculator. Plan loans, home mortgages, or car financing with ease.">
+<meta name="keywords" content="emi calculator, mortgage calculator, home loan calculator, loan payment calculator, calyours emi mortgage">
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "EMI & Mortgage Calculator",
+  "description": "Easily calculate EMI or Mortgage payments with Calyours Calculator.",
+  "url": "https://calyours.com/calculator",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Calyours",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://calyours.com/static/logo.png"
+    }
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="Mortgage-Emi-calculator-page">
+  <h1 class="page-title">📊 EMI & Mortgage Calculator</h1>
+  <p class="subtitle">Easily calculate EMI or Mortgage payments with smart breakdowns.</p>
+
+  <div class="calc-container">
+    <label>Select Calculator Type</label>
+    <select id="calcType" title="calcType">
+      <option value="emi">EMI Calculator</option>
+      <option value="mortgage">Mortgage Calculator</option>
+    </select>
+
+    <div id="formContainer"></div>
+
+<label>Select Currency</label>
+<select id="currency" title="currency">
+  <!-- American -->
+  <option value="$">US Dollar ($)</option>
+  <option value="C$">Canadian Dollar (C$)</option>
+  <option value="A$">Australian Dollar (A$)</option>
+  <option value="R$">Brazilian Real (R$)</option>
+  <option value="Mex$">Mexican Peso (Mex$)</option>
+
+  <!-- European -->
+  <option value="€">Euro (€)</option>
+  <option value="£">British Pound (£)</option>
+  <option value="CHF">Swiss Franc (CHF)</option>
+  <option value="kr">Swedish Krona (SEK kr)</option>
+  <option value="zł">Polish Zloty (PLN zł)</option>
+
+  <!-- Asian -->
+  <option value="₹">Indian Rupee (₹)</option>
+  <option value="PKR">Pakistani Rupee (PKR)</option>
+  <option value="¥">Japanese Yen (¥)</option>
+  <option value="₩">South Korean Won (₩)</option>
+  <option value="د.إ">UAE Dirham (AED د.إ)</option>
+
+  <!-- Middle East & Others -->
+  <option value="﷼">Saudi Riyal (SAR ﷼)</option>
+  <option value="EGP">Egyptian Pound (EGP)</option>
+  <option value="TRY">Turkish Lira (TRY ₺)</option>
+  <option value="R">South African Rand (R)</option>
+</select>
+
+    <button id="calcBtn">Calculate</button>
+
+    <div id="result" class="result-box"></div>
+
+    <h3>Previous Calculations</h3>
+    <ul id="history"></ul>
+  </div>
+
+<!-- Article Section -->
+<div class="article-section">
+  <h2>📘 When to use EMI vs Mortgage Calculator?</h2>
+  <div class="article-content">
+    <p>
+      An <strong>EMI Calculator</strong> helps you calculate monthly installments 
+      for <span class="highlight-text">personal loans, car loans, or education loans</span>.  
+      You can choose tenure in <em>months</em> or <em>years</em> as per your needs.
+    </p>
+
+    <p>
+      A <strong>Mortgage Calculator</strong> is ideal for <span class="highlight-text">property or home loans</span> 
+      where the repayment period is longer and involves compounding interest.
+    </p>
+
+    <p>
+      These calculators let you <strong>plan finances smartly</strong>, compare options, 
+      and clearly understand the <span class="highlight-text">total cost of borrowing</span> before you apply for a loan.
+    </p>
+
+    <div class="tips-box">
+      <h3>💡 Quick Tips:</h3>
+      <ul>
+        <li>Use EMI calculator for short/medium-term loans.</li>
+        <li>Use Mortgage calculator for long-term home or property loans.</li>
+        <li>Always compare interest rates and repayment schedules.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+{% endblock %}

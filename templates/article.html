@@ -1,33 +1,177 @@
 {% extends "base.html" %}
+{% block title %}Articles - Calyours{% endblock %}
 
-{% block title %}Article - Calyours{% endblock %}
+{% block head %}
+<meta name="description" content="Read the latest blogs from Calyours on finance, investment, and smart money tips.">
+<meta name="robots" content="index, follow">
+{% endblock %}
 
 {% block content %}
-  <!-- SEO: Blogs page meta tags -->
-  <meta name="description" content="Read the latest blogs from Calyours on financial planning, budgeting tips, investment strategies, and smart money management.">
-  <meta name="keywords" content="FIN Article, budgeting tips, investment Article, money management, finance news">
-  <meta name="robots" content="index, follow">
 
-  <!-- Structured Data for Blog Listing Page -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "name": "Calyours Article",
-    "description": "Latest articles and insights from Calyours to help you manage finances better.",
-    "url": "https://calyours.com/Article",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Calyours",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://calyours.com/static/logo.png"
+<!-- Breadcrumb -->
+<nav class="breadcrumb-article">
+  <a href="/">Home</a> <span>&gt;</span> <span>Articles</span>
+</nav>
+
+<!-- Search -->
+<div style="text-align:center; margin-bottom:1rem; margin-top: 40px">
+  <input type="text" id="searchInput" placeholder="Search articles..." style="padding:0.5rem; width:50%;">
+</div>
+
+<!-- Page Title -->
+<h1 class="page-title-article">📚 Latest Articles</h1>
+<p class="page-subtitle-article">Explore our collection of insights, tips, and guides to improve your financial journey.</p>
+
+<!-- Articles Container -->
+<div id="articles-container" class="card-grid-article">
+  {% for article in articles %}
+    <div class="card-article" 
+         data-title="{{ article.title }}" 
+         data-author="{{ article.author }}" 
+         data-excerpt="{{ article.excerpt }}">
+      <div class="card-img-wrapper-article">
+        <img src="{{ article.titleImage }}" alt="{{ article.title }}" class="card-img-article">
+      </div>
+      <div class="card-body-article">
+        <h2 class="card-title-article">{{ article.title }}</h2>
+        <p class="card-author-article"><b>By:</b> {{ article.author }}</p>
+        <p class="card-excerpt-article">{{ article.excerpt }}</p>
+        <a href="/articles/{{ article.id }}" class="btn-article">Read More &rarr;</a>
+
+        <!-- ✅ Bookmark Button -->
+        <button class="btn-article bookmark-btn" 
+                id="bookmark-btn-{{ article.id }}" 
+                onclick="toggleBookmark('{{ article.id }}', '{{ article.title }}', '/articles/{{ article.id }}')">
+          📌 Save
+        </button>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Bookmarks Section -->
+<div id="bookmarks-section" style="margin-top:2rem; display:none;">
+  <h2>Your Bookmarks</h2>
+  <div id="bookmarks-container" class="card-grid-article"></div>
+</div>
+
+<script>
+  // FILTER ARTICLES
+  function filterArticles() {
+    const inputEl = document.getElementById("searchInput");
+    if (!inputEl) return;
+    const input = inputEl.value.toLowerCase();
+
+    const container = document.getElementById("articles-container");
+    if (!container) return;
+    const cards = container.querySelectorAll(".card-article");
+
+    cards.forEach(card => {
+      const title = card.getAttribute("data-title")?.toLowerCase() || "";
+      const author = card.getAttribute("data-author")?.toLowerCase() || "";
+      const excerpt = card.getAttribute("data-excerpt")?.toLowerCase() || "";
+
+      if (title.includes(input) || author.includes(input) || excerpt.includes(input)) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
       }
-    }
+    });
   }
-  </script>
 
-  <div class="content p-4">
-    <h1>Article Page</h1>
-  </div>
+  // TOGGLE BOOKMARK
+  function toggleBookmark(id, title, url) {
+    let bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+    const exists = bookmarks.find(b => b.id === id);
+
+    if (exists) {
+      // Remove bookmark
+      bookmarks = bookmarks.filter(b => b.id !== id);
+      document.getElementById("bookmark-btn-" + id).innerText = "📌 Save";
+    } else {
+      // Add bookmark
+      bookmarks.push({ id, title, url });
+      document.getElementById("bookmark-btn-" + id).innerText = "✅ Saved";
+    }
+
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    loadBookmarks();
+  }
+
+  // LOAD BOOKMARKS SECTION
+  // TOGGLE BOOKMARK (max 3 allowed)
+  function toggleBookmark(id, title, url) {
+    let bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+    const exists = bookmarks.find(b => b.id === id);
+
+    if (exists) {
+      // Remove bookmark
+      bookmarks = bookmarks.filter(b => b.id !== id);
+      document.getElementById("bookmark-btn-" + id).innerText = "📌 Save";
+    } else {
+      // Add new bookmark
+      if (bookmarks.length >= 3) {
+        // Remove oldest (first one in array)
+        bookmarks.shift();
+      }
+      bookmarks.push({ id, title, url });
+      document.getElementById("bookmark-btn-" + id).innerText = "✅ Saved";
+    }
+
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    loadBookmarks();
+  }
+
+  // LOAD BOOKMARKS SECTION
+  function loadBookmarks() {
+    const container = document.getElementById("bookmarks-container");
+    const section = document.getElementById("bookmarks-section");
+    if (!container || !section) return;
+
+    let bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+    container.innerHTML = "";
+
+    if (bookmarks.length === 0) {
+      section.style.display = "none";
+      return;
+    }
+
+    section.style.display = "block";
+
+    bookmarks.forEach(b => {
+      const card = document.createElement("div");
+      card.classList.add("card-article");
+      card.innerHTML = `
+        <div class="card-body-article">
+          <h2 class="card-title-article">${b.title}</h2>
+          <a href="${b.url}" class="btn-article">Read Again &rarr;</a>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // UPDATE BUTTONS ON LOAD
+  function updateBookmarkButtons() {
+    let bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+    bookmarks.forEach(b => {
+      const btn = document.getElementById("bookmark-btn-" + b.id);
+      if (btn) {
+        btn.innerText = "✅ Saved";
+      }
+    });
+  }
+
+  // ON PAGE LOAD
+  document.addEventListener("DOMContentLoaded", () => {
+    loadBookmarks();
+    updateBookmarkButtons();
+
+    const searchInput = document.getElementById("searchInput");
+    if (searchInput) {
+      searchInput.addEventListener("input", filterArticles);
+    }
+  });
+</script>
+
 {% endblock %}

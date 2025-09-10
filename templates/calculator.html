@@ -2,7 +2,7 @@
 
 {% block title %}Calculators - Calyours{% endblock %}
 
-{% block content %}
+{% block head %}
   <!-- SEO: Calculator page meta tags -->
   <meta name="description" content="Use Calyours calculators to easily perform financial calculations, manage budgets, and plan your future.">
   <meta name="keywords" content="financial calculators, loan calculator, EMI calculator, budget calculator, investment calculator">
@@ -27,7 +27,69 @@
   }
   </script>
 
-  <div class="content p-4">
-    <h1>Calculator Page</h1>
+<div class="calculator-page">
+  <h1 class="page-title">Our Financial Calculators</h1>
+
+  <div class="card-container">
+
+<!-- Compound Interest Calculator -->
+<!-- SIP / Investment Goal Calculator -->
+<div class="calc-card">
+  <h2>SIP / Investment Goal Calculator</h2>
+  <p class="use-case">➡️ Use when you want to calculate how much <strong>you should invest monthly</strong> to achieve a specific wealth goal in the future.</p>
+  
+  <div class="formula">
+    <p><strong>Formula:</strong></p>
+    <p>
+      SIP = <span class="highlight">FV × r / ((1 + r)<sup>n</sup> – 1)</span>
+    </p>
+    <p class="explain">Where:  
+      FV = Target Future Value (Goal),  
+      r = Monthly Return Rate (Annual Rate ÷ 12),  
+      n = Total Number of Months
+    </p>
   </div>
+
+  <a href="/sip_calculator" class="calc-btn">Use Calculator</a>
+</div>
+
+
+
+
+    <!-- Mortgage Calculator -->
+    <div class="calc-card">
+      <h2>EMI/Mortgage Calculator</h2>
+      <p class="use-case">➡️ Use when you want to know how much <strong>monthly installment</strong> you’ll pay for a loan (car loan, personal loan, etc).</p>
+      <p class="use-case">➡️ Use when you want to calculate <strong>monthly house payments</strong> based on loan amount, interest, and term.</p>
+      <div class="formula">
+        <p><strong>Formula:</strong></p>
+        <p>M = <span class="highlight">P × [ r(1+r)<sup>n</sup> ]</span> ÷ <span class="highlight">[(1+r)<sup>n</sup> – 1]</span></p>
+        <p class="explain">Where:  
+          M = Monthly Payment, P = Principal Loan Amount, r = Monthly Interest Rate, n = Number of Payments</p>
+      </div>
+            <div class="formula">
+        <p><strong>Formula:</strong></p>
+        <p>EMI = <span class="highlight">[P × R × (1+R)<sup>N</sup>]</span> ÷ <span class="highlight">[(1+R)<sup>N</sup> – 1]</span></p>
+        <p class="explain">Where:  
+          P = Loan Amount, R = Monthly Interest Rate, N = Number of Months</p>
+      </div>
+      <a href="/mortgage_calculator" class="calc-btn">Use Calculator</a>
+    </div>
+
+    <!-- Compound Interest Calculator -->
+    <div class="calc-card">
+      <h2>Compound Interest Calculator</h2>
+      <p class="use-case">➡️ Use when you want to know how much <strong>your savings or investment will grow</strong> over time.</p>
+      <div class="formula">
+        <p><strong>Formula:</strong></p>
+        <p>A = <span class="highlight">P(1 + r/n)<sup>nt</sup></span></p>
+        <p class="explain">Where:  
+          A = Final Amount, P = Initial Principal, r = Annual Interest Rate,  
+          n = Times Interest Applied per Year, t = Time in Years</p>
+      </div>
+      <a href="/compound_interest_calculator" class="calc-btn">Use Calculator</a>
+    </div>
+
+  </div>
+</div>
 {% endblock %}

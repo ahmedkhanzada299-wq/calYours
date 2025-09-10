@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Terms & Conditions - Calyours{% endblock %}
+
+{% block head %}
+<meta name="description" content="Read the Terms and Conditions for using Calyours calculators and services.">
+<meta name="keywords" content="terms and conditions, calyours, user agreement, website rules">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="{{ url_for('static', path='css/terms.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="terms-container">
+  <h1 class="page-title">📜 Terms & Conditions</h1>
+  <p class="intro">
+    Welcome to <strong>Calyours.com</strong>. By using our calculators, tools, and website content, you agree to these Terms & Conditions. Please read carefully.
+  </p>
+
+  <!-- <img src="{{ url_for('static', path='images/terms-banner.jpg') }}" alt="Terms Banner" class="terms-banner"> -->
+
+  <h2>1. Acceptance of Terms</h2>
+  <p>
+    By accessing and using <strong>Calyours</strong>, you agree to comply with and be bound by these Terms & Conditions, as well as any applicable laws and regulations.
+  </p>
+
+  <h2>2. Use of Calculators & Tools</h2>
+  <p>
+    Our calculators (EMI, SIP, Mortgage, Compound Interest, etc.) are for informational purposes only. Results are estimates and do not constitute financial advice.
+  </p>
+  <ul>
+    <li>Always double-check your inputs before making decisions.</li>
+    <li>We are not responsible for any financial loss resulting from the use of our tools.</li>
+    <li>Use calculators at your own risk.</li>
+  </ul>
+  <img src="{{ url_for('static', path='Calculator.PNG') }}" alt="Calculator Screenshot" class="terms-image">
+
+  <h2>3. Intellectual Property</h2>
+  <p>
+    All content, designs, logos, and code on <strong>Calyours</strong> are owned by Calyours unless otherwise stated. You may not reproduce, copy, or redistribute our content without prior permission.
+  </p>
+
+  <h2>4. Limitation of Liability</h2>
+  <p>
+    Calyours will not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of our website or calculators.
+  </p>
+
+  <h2>5. Privacy</h2>
+  <p>
+    We respect your privacy. Personal information collected on our website is handled according to our <a href="/privacy_policy">Privacy Policy</a>.
+  </p>
+
+  <h2>6. Third-party Links</h2>
+  <p>
+    Our website may contain links to third-party websites. We are not responsible for the content or practices of external sites.
+  </p>
+
+  <h2>7. Changes to Terms</h2>
+  <p>
+    We may update these Terms & Conditions from time to time. Continued use of our website after updates means you accept the changes.
+  </p>
+
+  <h2>8. Governing Law</h2>
+  <p>
+    These Terms are governed by the laws of Pakistan. Any disputes arising will be subject to the jurisdiction of local courts.
+  </p>
+
+  <div class="callout">
+    <strong>Reminder:</strong> Always read the full terms before using any calculators or tools.
+  </div>
+
+  <!-- <img src="{{ url_for('static', path='images/terms-illustration.png') }}" alt="Terms Illustration" class="terms-image"> -->
+</section>
+{% endblock %}

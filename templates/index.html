@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 
 {% block title %}Home - Your Calculators App{% endblock %}
+{% block head %}
+{# ---- Head Block (SEO + JSON-LD only) ---- #}
 
-{% block content %}
   <!-- Page-specific SEO -->
   <meta name="description" content="Welcome to Calyours! Your one-stop solution for financial calculators, budgeting tools, and investment tracking.">
   <meta name="keywords" content="financial calculators, investment calculator, budgeting, expense tracker, savings calculator, Calyours">
   <meta name="robots" content="index, follow">
 
-  <!-- Structured Data for Home Page -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -23,55 +24,142 @@
         "@type": "ImageObject",
         "url": "https://calyours.com/static/logo.png"
       }
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://calyours.com/search?query={search_term_string}",
-      "query-input": "required name=search_term_string"
     }
   }
   </script>
 
-  <div class="centered-container">
-    <div class="content animate__animated animate__fadeIn">
-      <h1 class="mb-4">Welcome to Calyours</h1>
-      <p class="lead">Your comprehensive FIN calculators solution.</p>
-      <p>Click the menu items in the navigation bar to explore our financial tools and resources.</p>
-      
-      <div class="row mt-5">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-calculator-fill display-4 text-primary mb-3"></i>
-              <h5 class="card-title">FIN Calculator</h5>
-              <p class="card-text">Perform various financial calculations with our easy-to-use calculator.</p>
-              <a href="calculator" class="btn btn-primary mt-2">Try Calculator</a>
-            </div>
-          </div>
+  <!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Master Your Calculations with Ease</h1>
+<p>Smart calculators & insightful articles designed to make money management easier, smarter, and stress-free for everyone.  
+From budgeting and loans to investments and savings, we help you plan with confidence.</p>
+    
+    <!-- GIF Animation -->
+    <img src="{{ url_for('static', path='output-onlinegiftools.gif') }}" alt="Finance Animation" class="hero-gif">
+
+    <a href="/calculator" class="btn btn-light mt-4">Get Started</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section container">
+  <div class="row text-center">
+    <div class="col-6 mb-4">
+      <div class="feature-card">
+        <i class="bi bi-calculator-fill display-4 text-primary mb-3"></i>
+        <h5 class="fw-bold"> Calculators</h5>
+        <p>Explore powerful tools to manage your investments, savings, and budgets.</p>
+        <a href="/calculator" class="btn btn-primary mt-2">Try Calculator</a>
+      </div>
+    </div>
+
+    <div class="col-6 mb-4">
+      <div class="feature-card">
+        <i class="bi bi-journal-text display-4 text-success mb-3"></i>
+        <h5 class="fw-bold"> Articles</h5>
+        <p>Stay informed with expert-written articles to guide your financial journey.</p>
+        <a href="/article" class="btn btn-success mt-2">Read Articles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- Blogs Section -->
+<section class="blogs-section container">
+  <h2 class="text-center fw-bold mb-4">Our Blogs</h2>
+  
+  <div class="row text-center">
+    <!-- Blog Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', path='blog1.jpg') }}" class="card-img-top" alt="Blog 1">
+        <div class="card-body">
+          <h5 class="card-title">Smart Budgeting Tips</h5>
+          <p class="card-text">Learn how to manage your monthly budget effectively with our simple tips.</p>
+          <a href="#blog1" class="btn btn-outline-primary">Read More</a>
         </div>
-        
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-info-circle-fill display-4 text-info mb-3"></i>
-              <h5 class="card-title">About Us</h5>
-              <p class="card-text">Learn more about our mission and the team behind Calyours.</p>
-              <a href="/about_us" class="btn btn-info mt-2 text-white">About Us</a>
-            </div>
-          </div>
+      </div>
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', path='blog2.jpg') }}" class="card-img-top" alt="Blog 2">
+        <div class="card-body">
+          <h5 class="card-title">Investment Basics</h5>
+          <p class="card-text">Understand the fundamentals of investing to grow your wealth steadily.</p>
+          <a href="#blog2" class="btn btn-outline-success">Read More</a>
         </div>
-        
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-telephone-fill display-4 text-success mb-3"></i>
-              <h5 class="card-title">Contact Us</h5>
-              <p class="card-text">Have questions? Reach out to our support team for assistance.</p>
-              <a href="/contact_us" class="btn btn-success mt-2">Contact Us</a>
-            </div>
-          </div>
+      </div>
+    </div>
+
+    <!-- Blog Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', path='blog3.jpg') }}" class="card-img-top" alt="Blog 3">
+        <div class="card-body">
+          <h5 class="card-title">Saving for Retirement</h5>
+          <p class="card-text">Discover how to plan your retirement savings without stress.</p>
+          <a href="#blog3" class="btn btn-outline-warning">Read More</a>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- Actual Blog Content -->
+<section class="container blog-content">
+
+  <!-- Blog 1 -->
+  <h3 id="blog1">Smart Budgeting Tips</h3>
+  <p>Budgeting is the foundation of financial stability. Following simple steps can make your life stress-free.</p>
+  <ul>
+    <li>Track your income and expenses using a budgeting app or spreadsheet.</li>
+    <li>Follow the <strong>50/30/20 rule</strong>: 50% needs, 30% wants, 20% savings.</li>
+    <li>Review your spending habits at the end of each month.</li>
+    <li>Cut down on unnecessary subscriptions (like unused gym or streaming services).</li>
+    <li>Set short-term financial goals to stay motivated.</li>
+    <li>Build an emergency fund to cover 3–6 months of expenses.</li>
+    <li>Use cash for daily expenses to avoid overspending with cards.</li>
+  </ul>
+
+  <!-- Blog 2 -->
+  <h3 id="blog2" class="mt-5">Investment Basics</h3>
+  <p>Investing is one of the most powerful ways to build wealth. A well-diversified plan helps you reach long-term goals.</p>
+  <ul>
+    <li>Start investing as early as possible to benefit from compounding.</li>
+    <li>Diversify across stocks, bonds, and real estate to reduce risks.</li>
+    <li>Invest in index funds or ETFs for long-term stable growth.</li>
+    <li>Reinvest dividends to maximize compounding returns.</li>
+    <li>Avoid trying to “time the market,” focus on consistent investing.</li>
+    <li>Keep an emergency fund before investing to avoid pulling out early.</li>
+    <li>Understand your risk tolerance before choosing assets.</li>
+    <li>Review and rebalance your portfolio at least once a year.</li>
+  </ul>
+
+  <!-- Blog 3 -->
+  <h3 id="blog3" class="mt-5">Saving for Retirement</h3>
+  <p>Retirement planning ensures you maintain your lifestyle and peace of mind in later years.</p>
+  <ul>
+    <li>Open a retirement savings account such as 401(k) or IRA early.</li>
+    <li>Take advantage of employer matching contributions.</li>
+    <li>Contribute at least 10–15% of your income towards retirement.</li>
+    <li>Increase contributions whenever your salary increases.</li>
+    <li>Diversify investments to ensure stable long-term growth.</li>
+    <li>Review your retirement plan yearly and adjust based on inflation.</li>
+    <li>Avoid withdrawing funds early to prevent penalties.</li>
+    <li>Plan for healthcare expenses in retirement as well.</li>
+    <li>Set clear retirement goals (age, lifestyle, expected expenses).</li>
+  </ul>
+
+</section>
+
+
+
+
 {% endblock %}

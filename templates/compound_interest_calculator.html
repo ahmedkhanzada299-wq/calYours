@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Compound Interest Calculator - Calyours{% endblock %}
+
+{% block head %}
+<meta name="description" content="Easily calculate compound interest with Calyours Compound Interest Calculator. Plan your savings and investments smartly.">
+<meta name="keywords" content="compound interest calculator, savings calculator, investment calculator, interest calculator">
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Compound Interest Calculator",
+  "description": "Easily calculate how your savings or investment will grow with compound interest using Calyours Compound Interest Calculator.",
+  "url": "https://calyours.com/compound-interest-calculator",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Calyours",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://calyours.com/static/logo.png"
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="style.css">
+{% endblock %}
+
+{% block content %}
+<div class="Mortgage-Emi-calculator-page">
+  <h1 class="page-title">💰 Compound Interest Calculator</h1>
+  <p class="subtitle">Find out how much your savings or investments will grow over time.</p>
+
+  <div class="calc-container">
+    <label>Principal Amount</label>
+    <input type="number" id="principal" placeholder="Enter principal amount" required>
+
+    <label>Annual Interest Rate (%)</label>
+    <input type="number" id="rate" placeholder="e.g. 5" step="0.01" required>
+
+    <label>Times Compounded Per Year</label>
+    <input type="number" id="compounds" placeholder="e.g. 12" required>
+
+    <label>Time (Years)</label>
+    <input type="number" id="time" placeholder="e.g. 10" required>
+
+    <label>Select Currency</label>
+    <select id="currency" title="currency">
+      <option value="$">US Dollar ($)</option>
+      <option value="€">Euro (€)</option>
+      <option value="£">British Pound (£)</option>
+      <option value="₹">Indian Rupee (₹)</option>
+      <option value="PKR">Pakistani Rupee (PKR)</option>
+      <option value="C$">Canadian Dollar (C$)</option>
+      <option value="A$">Australian Dollar (A$)</option>
+      <option value="¥">Japanese Yen (¥)</option>
+      <option value="₩">South Korean Won (₩)</option>
+      <option value="﷼">Saudi Riyal (﷼)</option>
+    </select>
+
+    <button id="calcBtn">Calculate</button>
+
+    <div id="result" class="result-box"></div>
+
+    <h3>Previous Calculations</h3>
+    <ul id="history"></ul>
+  </div>
+
+  <!-- Article Section -->
+  <div class="article-section">
+    <h2>📘 Why use a Compound Interest Calculator?</h2>
+    <div class="article-content">
+      <p>
+        A <strong>Compound Interest Calculator</strong> helps you understand how your 
+        <span class="highlight-text">savings or investments grow</span> over time by reinvesting interest.  
+        It’s useful for bank savings, fixed deposits, or long-term investments.
+      </p>
+
+      <p>
+        Unlike simple interest, <strong>compound interest</strong> grows your money faster 
+        because you earn interest on both the principal and accumulated interest.
+      </p>
+
+      <div class="tips-box">
+        <h3>💡 Quick Tips:</h3>
+        <ul>
+          <li>Higher compounding frequency = faster growth.</li>
+          <li>Longer time = bigger benefits of compounding.</li>
+          <li>Great for planning retirement or children’s education funds.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="compound_interest.js"></script>
+{% endblock %}

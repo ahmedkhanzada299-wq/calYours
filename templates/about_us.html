@@ -2,32 +2,97 @@
 
 {% block title %}About Us - Calyours{% endblock %}
 
-{% block content %}
-  <!-- SEO: About Us page meta tags -->
-  <meta name="description" content="Learn more about Calyours, our mission, vision, and commitment to providing financial tools that simplify money management.">
-  <meta name="keywords" content="about Calyours, company information, financial tools, money management, budgeting solutions">
-  <meta name="robots" content="index, follow">
+{% block head %}
+<!-- SEO: About Us page meta tags -->
+<meta name="description" content="Learn more about Calyours, our mission, vision, and how we provide calculators and ML prediction tools for smarter decisions.">
+<meta name="keywords" content="about Calyours, calculators, ML prediction tools, data analysis, money management, smart tools">
+<meta name="robots" content="index, follow">
 
-  <!-- Structured Data for About Page -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About Us",
-    "description": "About Calyours, a platform providing advanced financial calculators and money management tools.",
-    "url": "https://calyours.com/about_us",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Calyours",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://calyours.com/static/logo.png"
-      }
+<!-- Structured Data for About Page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Us",
+  "description": "About Calyours, a platform providing calculators, ML-based prediction tools, and user-friendly solutions for smarter decisions.",
+  "url": "https://calyours.com/about_us",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Calyours",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://calyours.com/static/logo.png"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "calyoursinfo@gmail.com",
+      "contactType": "Customer Support"
     }
   }
-  </script>
+}
+</script>
 
-  <div class="content p-4">
-    <h1>About Us Page</h1>
-  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="about-container">
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="hero-text">
+      <h1>About <span class="brand">Calyours</span></h1>
+      <p>At Calyours, we create <strong>advanced calculators</strong> and <strong>machine learning prediction tools</strong> to simplify complex calculations and provide accurate insights — whether it's savings, loans, or forecasting.</p>
+    </div>
+    <div class="hero-image">
+      <!-- Placeholder for Logo -->
+      <img src="/static/logo.png" alt="Calyours Logo">
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="about-section">
+    <h2>Our Mission</h2>
+    <p>Our mission is to make smart tools accessible for everyone. Whether you are a student, professional, or business owner, <strong>Calyours.com</strong> helps you calculate, analyze, and plan better with ease.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/4781/4781517.png" alt="Mission Icon">
+  </section>
+
+  <!-- Vision -->
+  <section class="about-section">
+    <h2>Our Vision</h2>
+    <p>We aim to be the go-to platform for <strong>smart calculators and ML predictions</strong>. By combining simplicity with technology, we want to empower people to make informed decisions without needing complex tools.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="Vision Icon">
+  </section>
+
+  <!-- What We Offer -->
+  <section class="about-section offers">
+    <h2>What We Offer</h2>
+    <div class="offers-grid">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721295.png" alt="Calculator">
+        <p>Simple & Accurate Calculators</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135681.png" alt="Prediction">
+        <p>ML-Based Prediction Models</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1903/1903162.png" alt="Planning">
+        <p>Financial & Planning Tools</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="User Friendly">
+        <p>User-Friendly Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="about-contact">
+    <h2>Get in Touch</h2>
+    <p>If you have any questions or suggestions, feel free to reach out at 
+      <a href="mailto:calyoursinfo@gmail.com">calyoursinfo@gmail.com</a>.  
+      We’d love to hear from you!</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact Icon">
+  </section>
+</div>
 {% endblock %}

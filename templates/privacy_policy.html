@@ -2,32 +2,76 @@
 
 {% block title %}Privacy Policy - Calyours{% endblock %}
 
-{% block content %}
-  <!-- SEO: Privacy Policy page-specific meta tags -->
-  <meta name="description" content="Read Calyours Privacy Policy to understand how we collect, use, and protect your personal data.">
-  <meta name="keywords" content="privacy policy, data protection, user privacy, Calyours">
-  <meta name="robots" content="index, follow">
+{% block head %}
+<!-- SEO: Privacy Policy page-specific meta tags -->
+<meta name="description" content="Read Calyours Privacy Policy to understand how we collect, use, and protect your personal data.">
+<meta name="keywords" content="privacy policy, data protection, user privacy, Calyours, calculators, machine learning predictions">
+<meta name="robots" content="index, follow">
 
-  <!-- Structured Data for Privacy Policy -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Privacy Policy",
-    "description": "Read Calyours Privacy Policy to understand how we collect, use, and protect your personal data.",
-    "url": "https://calyours.com/privacy_policy",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Calyours",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://calyours.com/static/logo.png"
-      }
+<!-- Structured Data for Privacy Policy -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Privacy Policy",
+  "description": "Read Calyours Privacy Policy to understand how we collect, use, and protect your personal data including calculators and machine learning predictions.",
+  "url": "https://calyours.com/privacy_policy",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Calyours",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://calyours.com/static/logo.png"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "calyoursinfo@gmail.com",
+      "contactType": "Customer Support"
     }
   }
-  </script>
+}
+</script>
+{% endblock %}
 
-  <div class="content p-4">
-    <h1>Privacy Policy Page</h1>
-  </div>
+{% block content %}
+
+<div class="privacy-container">
+  <h1>Privacy Policy</h1>
+  <p>Welcome to <strong>Calyours.com</strong>. We value your trust and respect your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal data when you use our services, including our calculators and machine learning-based prediction tools.</p>
+
+  <h2>1. Information We Collect</h2>
+  <p>We may collect the following types of information:</p>
+  <ul>
+    <li><strong>Personal Information:</strong> such as your name, email address (<a href="mailto:calyoursinfo@gmail.com">calyoursinfo@gmail.com</a>), and contact details if you choose to share them.</li>
+    <li><strong>Usage Data:</strong> information about how you use our calculators, prediction tools, and other features on our website.</li>
+    <li><strong>Technical Data:</strong> including IP address, browser type, and operating system for security and analytics purposes.</li>
+  </ul>
+
+  <h2>2. How We Use Your Information</h2>
+  <p>Your data is used to:</p>
+  <ul>
+    <li>Provide accurate results from our calculators and prediction models.</li>
+    <li>Improve the accuracy of our machine learning algorithms.</li>
+    <li>Respond to your queries and provide support.</li>
+    <li>Ensure website security and optimize performance.</li>
+  </ul>
+
+  <h2>3. Data Protection</h2>
+  <p>We apply strict security measures to protect your information. Any data shared for predictions or calculations is processed securely and is not sold or shared with third parties for marketing purposes.</p>
+
+  <h2>4. Cookies and Tracking</h2>
+  <p>We may use cookies to improve your browsing experience. These help us understand how users interact with our tools and calculators. You may disable cookies in your browser settings if you prefer.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <p>We may integrate third-party APIs or services (such as analytics tools) only to enhance your experience. These services are bound by their own privacy policies.</p>
+
+  <h2>6. Children’s Privacy</h2>
+  <p>Our services are intended for general audiences and are not directed at children under 13. We do not knowingly collect personal data from minors.</p>
+
+  <h2>7. Updates to This Policy</h2>
+  <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with the updated date at the top.</p>
+
+  <h2>8. Contact Us</h2>
+  <p>If you have any questions about this Privacy Policy, feel free to contact us at <a href="mailto:calyoursinfo@gmail.com">calyoursinfo@gmail.com</a>.</p>
+</div>
 {% endblock %}

@@ -1,0 +1,469 @@
+[
+  {
+    "id": 1,
+    "title": "Gen Z Flocks to Stocks as Mortgage Rates Deter Home Buying",
+    "author": "Louisa Clarence-Smith (The Times)",
+    "date": "2025-09-02",
+    "titleImage": "\\static\\articles\\article1.jpg",
+    "excerpt": "Faced with soaring home costs and near-7% mortgage rates, Gen Z Americans are favoring stock market investing over homeownership.",
+    "content": [
+      {
+        "subtitle": "Introduction",
+        "paragraphs": [
+          "With mortgage rates around 6.6% and median home prices nearly five times average income, Gen Z Americans are choosing stock investing over buying homes :contentReference[oaicite:0]{index=0}.",
+          "The share of 25-year-olds holding investment accounts jumped from 6% in 2015 to 37% in 2024, signaling a shift in wealth-building preferences :contentReference[oaicite:1]{index=1}."
+        ],
+        "bullets": [
+          "High housing barriers and borrowing costs",
+          "Mobile-first investing culture fueled by FOMO",
+          "Pandemic savings redirected to equities"
+        ]
+      },
+      {
+        "subtitle": "Analysis & Risks",
+        "paragraphs": [
+          "While equity investments offer accessibility, markets remain expensive and volatile—raising risks for younger investors without diversified portfolios :contentReference[oaicite:2]{index=2}.",
+          "Simultaneous job insecurity and real-time exposure may lead to emotional investing and premature portfolio drawdowns."
+        ],
+        "bullets": [
+          "Market risk amplification in downturns",
+          "Behavioral pitfalls from app-driven trading"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Investing is a valid alternative to homeownership under current conditions, but Gen Z should pair it with emergency savings and financial education.",
+          "A balanced strategy—using diversified ETFs, retirement accounts, and maintaining rental flexibility—can build long-term resilience."
+        ],
+        "bullets": [
+          "Use dollar-cost averaging when investing",
+          "Prefer platforms with built-in asset diversification",
+          "Balance portfolios with liquidity for unexpected needs"
+        ]
+      }
+    ],
+    "source": "The Times"
+  },
+  {
+    "id": 2,
+    "title": "U.S. Workers Increasingly Stressed About Finances, BofA Survey Shows",
+    "author": "Reuters Staff",
+    "date": "2025-09-03",
+    "titleImage": "\\static\\articles\\article2.jpg",
+    "excerpt": "A 2025 Bank of America survey reveals only 47% of full-time U.S. workers feel financially well, while debt pressures lead 26% to seek help.",
+    "content": [
+      {
+        "subtitle": "Survey Insights",
+        "paragraphs": [
+          "A Bank of America survey in May shows only 47% of U.S. workers feel financially secure—down from 52%—while 85% carry debt and 26% seek help—double 2023’s rate :contentReference[oaicite:3]{index=3}.",
+          "Despite long-term optimism (68%), 77% express concern about the broader economy :contentReference[oaicite:4]{index=4}."
+        ],
+        "bullets": [
+          "Rising debt anxiety across income levels",
+          "Increasing demand for financial wellness resources",
+          "Short-term stress despite hope for long-term recovery"
+        ]
+      },
+      {
+        "subtitle": "Employer Role",
+        "paragraphs": [
+          "Financial wellness benefits improve morale and retention, yet only a portion of employers offer them—indicating a support gap for employees :contentReference[oaicite:5]{index=5}.",
+          "Tools like budgeting apps, debt counseling, and emergency funds can ease stress."
+        ],
+        "bullets": [
+          "Need for clearer financial support programs",
+          "Benefit gaps especially in small businesses",
+          "Potential ROI through employee wellness investment"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Workers should focus on building starter emergency savings, reducing high-interest debt, and requesting wellness tools from employers.",
+          "Employers benefit by offering education and matching programs, improving productivity and retention."
+        ],
+        "bullets": [
+          "Automate savings even in small amounts",
+          "Consolidate or prioritize debt repayment",
+          "Advocate internally for accessible financial tools"
+        ]
+      }
+    ],
+    "source": "Reuters"
+  },
+  {
+    "id": 3,
+    "title": "Lower-Income and Gen Z Investing at Record Rates, Data Shows",
+    "author": "Jennifer Sor (Business Insider)",
+    "date": "2025-09-01",
+    "titleImage": "\\static\\articles\\article3.jpg",
+    "excerpt": "Lower-income Americans and Gen Z are investing at record levels—even as savings remain low and income recovery is slow.",
+    "content": [
+      {
+        "subtitle": "Investment Trends",
+        "paragraphs": [
+          "Young and lower-income Americans are five times more likely to invest today than 10 years ago, according to JPMorgan data :contentReference[oaicite:6]{index=6}.",
+          "But low savings and unstable income highlight the need for injecting stability into their financial behavior."
+        ],
+        "bullets": [
+          "Sharp rise in investing by vulnerable groups",
+          "Investing sees growth despite financial fragility",
+          "Shift toward equities even amid economic risk"
+        ]
+      },
+      {
+        "subtitle": "Implications & Risks",
+        "paragraphs": [
+          "Early investing is powerful, but must be paired with a liquidity buffer; markets remain unpredictable.",
+          "Financial experts urge diversified portfolios with protective reserves."
+        ],
+        "bullets": [
+          "Leveraging ETFs for portfolio diversity",
+          "Dual focus: savings + investment"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Young investors should automate savings and investing simultaneously, starting with small ETF allocations while maintaining cash reserves.",
+          "Use low-cost robo-advisors and regularly rebalance portfolios for long-run growth."
+        ],
+        "bullets": [
+          "Split income: both invest and save",
+          "Choose low-fee, diversified platforms",
+          "Educate on risk tolerance and rebalancing"
+        ]
+      }
+    ],
+    "source": "Business Insider"
+  },
+  {
+    "id": 4,
+    "title": "Homeownership Seen as Increasingly Out of Reach in 2025",
+    "author": "Investopedia Staff",
+    "date": "2025-09-05",
+    "titleImage": "\\static\\articles\\article4.jpg",
+    "excerpt": "Investopedia finds that 77% say homeownership is harder to achieve due to sharp price increases, high borrowing costs, and housing shortages.",
+    "content": [
+      {
+        "subtitle": "Barrier Overview",
+        "paragraphs": [
+          "According to Investopedia’s 2025 American Dream Survey, 77% of Americans feel homeownership is harder to achieve due to a 60% jump in home prices, inflation, and a shortage of 4.7 million homes :contentReference[oaicite:7]{index=7}.",
+          "Fears of never owning are especially strong among young generations: 41% of Gen Z and 42% of Millennials feel priced out :contentReference[oaicite:8]{index=8}."
+        ],
+        "bullets": [
+          "Worsening home affordability",
+          "Shortage in homes for entry-level buyers",
+          "Generational concern about housing equity"
+        ]
+      },
+      {
+        "subtitle": "Creative Alternatives",
+        "paragraphs": [
+          "Experts suggest looking at fixer-uppers, co-ownership models, or delaying homeownership in favor of retirement saving and debt freedom :contentReference[oaicite:9]{index=9}.",
+          "Wealth-building can also happen via diversified assets beyond real estate."
+        ],
+        "bullets": [
+          "Alternative pathways to home equity",
+          "Reallocated financial priorities"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Given affordability barriers, individuals should redefine their goals: pursue flexible housing options while building retirement and emergency savings.",
+          "Asset diversification and rental flexibility can support financial goals without over-leveraging."
+        ],
+        "bullets": [
+          "Balance between rent and investment",
+          "Utilize flexibility-friendly home options",
+          "Protect liquidity while planning ahead"
+        ]
+      }
+    ],
+    "source": "Investopedia"
+  },
+  {
+    "id": 5,
+    "title": "Young Homebuyers Lean on Family Help for Down Payments",
+    "author": "New York Post (author not listed)",
+    "date": "2025-07-15",
+    "titleImage": "\\static\\articles\\article5.jpg",
+    "excerpt": "About 24% of young homebuyers rely on family gifts or liquidated assets to afford down payments, highlighting financial strain.",
+    "content": [
+      {
+        "subtitle": "Support Strategies",
+        "paragraphs": [
+          "Nearly 24% of young homebuyers (Gen Z and Millennials) use family gifts or inheritances to fund down payments, with others selling stocks (20%), accessing crypto (13%), or dipping into retirement savings (12%) :contentReference[oaicite:10]{index=10}.",
+          "To reduce costs, ~18% lived with family, worked second jobs, or reduced retirement contributions."
+        ],
+        "bullets": [
+          "Family assistance remains common",
+          "Asset liquidation increases risk",
+          "Personal sacrifices to enter market"
+        ]
+      },
+      {
+        "subtitle": "Trade-offs",
+        "paragraphs": [
+          "Liquidating retirement or savings impairs long-term financial health, yet remains common due to limited housing affordability :contentReference[oaicite:11]{index=11}.",
+          "Living with family or working extra hours may alleviate short-term burden but delay independence."
+        ],
+        "bullets": [
+          "Delayed financial independence",
+          "Compromised long-term wealth growth",
+          "Short-term solutions with long-term cost"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Young buyers should combine family help with disciplined savings and alternative housing models like co-buying or rent-to-own to minimize liabilities.",
+          "Balancing home entry with preservation of retirement savings ensures both short- and long-term security."
+        ],
+        "bullets": [
+          "Leverage help strategically, not fully",
+          "Continue contributing to retirement",
+          "Explore affordable housing models"
+        ]
+      }
+    ],
+    "source": "New York Post"
+  },
+  
+  {
+    "id": 6,
+    "title": "Financial Independence in Your 20s Is Tough—Here’s How to Make It Easier",
+    "author": "Investopedia Staff",
+    "date": "2025-09-05",
+    "titleImage": "\\static\\articles\\article6.jpg",
+    "excerpt": "Nearly 39% of Gen Z still rely on family support due to rising costs—early budgeting, side income, and savings discipline can help young adults gain independence.",
+    "content": [
+      {
+        "subtitle": "Introduction",
+        "paragraphs": [
+          "As of 2025, 39% of Gen Z adults aged 18–28 still receive financial support from family, largely due to student loans, rent, and unstable job markets ([Investopedia](https://www.investopedia.com/achieving-financial-independence-in-your-20s-can-be-tough-heres-how-experts-suggest-making-it-easier-11763231)).",
+          "Early financial planning and disciplined saving are crucial to breaking the cycle and building long-term stability."
+        ],
+        "bullets": [
+          "High debt and living costs challenge financial independence",
+          "Many young adults still rely on family support",
+          "Foundational habits like budgeting are essential"
+        ]
+      },
+      {
+        "subtitle": "Expert Strategies",
+        "paragraphs": [
+          "Experts recommend tracking every dollar spent, setting realistic budgets aligned to essentials like housing and transport, and creating side income streams.",
+          "Avoid lifestyle inflation—the practice of increasing spending with rising income—and instead prioritize small but consistent savings to harness compound interest over time."
+        ],
+        "bullets": [
+          "Consistency in saving beats size of savings",
+          "Side hustles provide helpful flexibility",
+          "Budgeting tools help reinforce planning"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Financial independence in your 20s requires clarity, small achievable goals, and consistency. Start by automating savings—even $50/month builds momentum—and track expenses to understand your financial behavior.",
+          "Use your 20s to build strong habits that compound over time, setting a foundation for long-term stability and flexibility."
+        ],
+        "bullets": [
+          "Automate small monthly savings",
+          "Use budgeting apps for visibility",
+          "Diversify income through flexible work"
+        ]
+      }
+    ],
+    "source": "Investopedia"
+  },
+  {
+    "id": 7,
+    "title": "10 Money Rules to Preserve Your Wealth Amid 2025 Recession Risks",
+    "author": "Venessa Wong (MarketWatch)",
+    "date": "2025-05-01",
+    "titleImage": "\\static\\articles\\article7.jpg",
+    "excerpt": "With recession concerns rising in 2025, follow expert tips—boost savings, diversify holdings, and consider Roth conversions during market dips.",
+    "content": [
+      {
+        "subtitle": "Introduction",
+        "paragraphs": [
+          "As economic volatility rises in 2025, financial professionals advise strategies to sustain wealth, including increasing liquidity, diversifying investments, and leveraging market downturns wisely ([MarketWatch](https://www.marketwatch.com/story/the-economy-has-shrunk-follow-these-10-money-rules-for-2025-to-keep-your-wealth-from-shrinking-with-it-104fc778), author Venessa Wong)."
+        ],
+        "bullets": [
+          "Recession risk calls for proactive planning",
+          "Essential steps can preserve capital",
+          "Timing is less important than preparedness"
+        ]
+      },
+      {
+        "subtitle": "Key Rules",
+        "paragraphs": [
+          "Top planners recommend maintaining emergency savings for 6–12 months, rebalancing portfolios with bonds and defensive equities, maximizing retirement contributions, and considering Roth conversions to benefit from post-recession tax environments.",
+          "Avoid impulse spending and focus on need-based budgeting to conserve resources."
+        ],
+        "bullets": [
+          "Bolster emergency funds",
+          "Diversify across asset classes",
+          "Use tax-efficient moves when markets dip"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Building financial resilience isn’t about timing a recession but being ready. Secure your cash reserves, rebalance intelligently, and capitalize on low valuations for tax-smart investing.",
+          "These sensible practices ensure you’re not just prepared—but positioned to grow when conditions improve."
+        ],
+        "bullets": [
+          "Automate savings increases in calm periods",
+          "Rebalance portfolio semi-annually",
+          "Continue contributions even in downturns"
+        ]
+      }
+    ],
+    "source": "MarketWatch"
+  },
+  {
+    "id": 8,
+    "title": "Wage Crisis of 2025: 73% of Workers Can’t Afford More Than Basics",
+    "author": "Bryan Robinson, Ph.D. (Forbes)",
+    "date": "2025-01-24",
+    "titleImage": "\\static\\articles\\article8.jpg",
+    "excerpt": "Forbes reports 73% of U.S. workers struggle to meet basic expenses amid stagnant wages and rising costs—highlighting the need for employer support and skill-building.",
+    "content": [
+      {
+        "subtitle": "Issue Overview",
+        "paragraphs": [
+          "Forbes reports that 73% of U.S. workers say they cannot afford more than basic living expenses in 2025, as stagnant wages fail to keep pace with inflation and cost-of-living increases ([Forbes](https://www.forbes.com/sites/bryanrobinson/2025/01/24/the-wage-crisis-of-2025-73-of-workers-struggling)).",
+          "This crisis spans across socioeconomic groups and undermines savings, productivity, and financial security."
+        ],
+        "bullets": [
+          "Wage stagnation paired with rising costs",
+          "Widely spread financial vulnerability",
+          "Productivity and morale impacted"
+        ]
+      },
+      {
+        "subtitle": "Recommended Actions",
+        "paragraphs": [
+          "Industry leaders recommend employers implement transparent pay practices, provide upskilling opportunities, and offer financial wellness programs.",
+          "Employees should advocate for career development opportunities and utilize benefit programs to build financial resilience."
+        ],
+        "bullets": [
+          "Employers: invest in compensation fairness",
+          "Skills are financial power",
+          "Take advantage of available benefits"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Overcoming the 2025 wage crisis requires joint effort: workers need to proactively grow skills and use support options, while employers must enable financial uplift through benefits and clarity.",
+          "Financial resilience starts with empowerment—and no worker should bear this alone."
+        ],
+        "bullets": [
+          "Seek upskilling and remote opportunities",
+          "Ask for transparent pay benchmarks",
+          "Use wellness and planning resources"
+        ]
+      }
+    ],
+    "source": "Forbes"
+  },
+  {
+    "id": 9,
+    "title": "Employee Financial Wellness in 2025: What Employers Can Do",
+    "author": "Bank of America Institute",
+    "date": "2025-08-01",
+    "titleImage": "\\static\\articles\\article9.jpg",
+    "excerpt": "66% of employees are financially stressed and 76% say cost-of-living exceeds wage growth—employers can help by expanding financial wellness programs.",
+    "content": [
+      {
+        "subtitle": "Current Landscape",
+        "paragraphs": [
+          "Bank of America Institute reports 66% of U.S. employees are financially stressed, and 76% feel their wages have not kept up with living expenses. Meanwhile, 26% say they now seek help with savings, debt, or wellness planning ([Bank of America Institute](https://workplaceinsights.bofa.com/articles/2025/08/wellness.html))."
+        ],
+        "bullets": [
+          "Widespread worker financial stress",
+          "Growing desire for tailored support",
+          "Employers play a key role"
+        ]
+      },
+      {
+        "subtitle": "Opportunity for Employers",
+        "paragraphs": [
+          "Wellness programs benefit both employees and organizations through improved morale, retention, and productivity. Still, only 54% of large and 32% of small employers offer such support, revealing a critical gap."
+        ],
+        "bullets": [
+          "Wellness benefits deliver ROI",
+          "Support gap in smaller firms",
+          "Holistic tools matter"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "Employers should invest in comprehensive wellness resources—automated savings tools, debt education, and employer-employee communication. Employees should use these tools proactively to reduce stress and increase stability.",
+          "Collaboration between parties is key to building a financially healthy workplace."
+        ],
+        "bullets": [
+          "Normalize using financial tools",
+          "Encourage high engagement in wellness programs",
+          "Measure success through feedback"
+        ]
+      }
+    ],
+    "source": "Bank of America Institute"
+  },
+  {
+    "id": 10,
+    "title": "The 2025 American Dream Now Costs Over $5 Million",
+    "author": "Investopedia Staff",
+    "date": "2025-06-01",
+    "titleImage": "\\static\\articles\\article10.jpg",
+    "excerpt": "In 2025, achieving retirement, home, kids, healthcare, and a comfortable life totals over $5 million—highlighting shifting financial aspirations.",
+    "content": [
+      {
+        "subtitle": "Cost Breakdown",
+        "paragraphs": [
+          "Investopedia estimates the classic American Dream—covering home, retirement, kids, healthcare, vacations, and weddings—costs more than $5 million in 2025 ([Investopedia](https://www.investopedia.com/2025-american-dream-costs-more-than-usd5-million-11796727)).",
+          "Inflation in healthcare, childcare, and housing has significantly driven up this lifetime goal."
+        ],
+        "bullets": [
+          "Total includes multiple big-ticket milestones",
+          "Inflation hitting essential areas hard",
+          "Economic rethinking required"
+        ]
+      },
+      {
+        "subtitle": "Rethinking the Dream",
+        "paragraphs": [
+          "Many Americans now prioritize financial security, debt-free living, and healthcare access over traditional milestones like elaborate weddings or exotic vacations.",
+          "Personal values and financial flexibility increasingly shape modified dreams."
+        ],
+        "bullets": [
+          "Define what ‘success’ means to you",
+          "Deprioritize costly rituals",
+          "Focus on long-term financial health"
+        ]
+      },
+      {
+        "subtitle": "Conclusion & Actionable Advice",
+        "paragraphs": [
+          "The $5M dream underscores financial challenges, but also offers clarity—you don’t need every milestone to qualify a successful life. Identify what matters most to you, save for themes, and define your own realistic, sustainable goals.",
+          "By focusing earlier on essentials, you can build fulfillment without financial regret."
+        ],
+        "bullets": [
+          "Prioritize essentials like housing and healthcare",
+          "Delay or simplify expensive events",
+          "Align budgets to your priorities"
+        ]
+      }
+    ],
+    "source": "Investopedia"
+  }
+
+]
+
