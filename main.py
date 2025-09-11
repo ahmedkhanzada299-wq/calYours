@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request , Response
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse , FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import time , json
@@ -77,3 +77,12 @@ async def sip_calculator(request: Request):
 @app.get("/term_condition", response_class=HTMLResponse)
 async def term_condition(request: Request):
     return templates.TemplateResponse("term_condition.html", {"request": request,"ts": time.time()})
+
+
+@app.get("/robots.txt", response_class=FileResponse)
+async def robots():
+    return FileResponse("static/robots.txt", media_type="text/plain")
+
+@app.get("/sitemap.xml", response_class=FileResponse)
+async def sitemap():
+    return FileResponse("static/sitemap.xml", media_type="application/xml")
