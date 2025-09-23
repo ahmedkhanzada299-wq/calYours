@@ -1,0 +1,27 @@
+
+
+
+google.com, pub-7167635862643117, DIRECT, f08c47fec0942fa0
+
+
+
+
+# -----------------------------
+# Optional: Other ad networks / exchanges
+# If you use other ad partners, add one line per partner below.
+# Replace SELLER_ID_OR_ACCOUNT with the ID given by that partner,
+# and replace CERT_AUTHORITY_ID if the partner provides one.
+# Example placeholder lines (DO NOT upload these placeholders as-is):
+# appnexus.com, SELLER_ID_OR_ACCOUNT, DIRECT, CERT_AUTHORITY_ID
+# openx.com, SELLER_ID_OR_ACCOUNT, DIRECT, CERT_AUTHORITY_ID
+# rubiconproject.com, SELLER_ID_OR_ACCOUNT, DIRECT, CERT_AUTHORITY_ID
+# indexexchange.com, SELLER_ID_OR_ACCOUNT, DIRECT, CERT_AUTHORITY_ID
+
+# -----------------------------
+# Notes:
+# 1) Save this file as exactly: ads.txt (lowercase)
+# 2) Upload to your website root so it's accessible at:
+#    https://calyours.com/ads.txt
+# 3) For other ad networks, ask them for the exact line to add (they'll give you SELLER ID).
+# 4) Google may take 24-72 hours to re-crawl and update status in AdSense.
+# 5) Do NOT add other publisher IDs you don't own.
