@@ -79,10 +79,32 @@ async def term_condition(request: Request):
     return templates.TemplateResponse("term_condition.html", {"request": request,"ts": time.time()})
 
 
-@app.get("/robots.txt", response_class=FileResponse)
-async def robots():
-    return FileResponse("static/robots.txt", media_type="text/plain")
+from fastapi import FastAPI
+from fastapi.responses import FileResponse
+import os
 
-@app.get("/sitemap.xml", response_class=FileResponse)
+app = FastAPI()
+
+# Serve robots.txt
+@app.get("/robots.txt", response_class=FileResponse, include_in_schema=False)
+async def robots():
+    path = "static/robots.txt"
+    if os.path.exists(path):
+        return FileResponse(path, media_type="text/plain")
+    return {"detail": "robots.txt not found"}
+
+# Serve sitemap.xml
+@app.get("/sitemap.xml", response_class=FileResponse, include_in_schema=False)
 async def sitemap():
-    return FileResponse("static/sitemap.xml", media_type="application/xml")
+    path = "static/sitemap.xml"
+    if os.path.exists(path):
+        return FileResponse(path, media_type="application/xml")
+    return {"detail": "sitemap.xml not found"}
+
+# Serve ads.txt (adding this based on your earlier question)
+@app.get("/ads.txt", response_class=FileResponse, include_in_schema=False)
+async def ads():
+    path = "ads.txt"
+    if os.path.exists(path):
+        return FileResponse(path, media_type="text/plain")
+    return {"detail": "ads.txt not found"}
