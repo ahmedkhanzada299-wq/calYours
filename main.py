@@ -79,32 +79,15 @@ async def term_condition(request: Request):
     return templates.TemplateResponse("term_condition.html", {"request": request,"ts": time.time()})
 
 
-from fastapi import FastAPI
-from fastapi.responses import FileResponse
-import os
-
-app = FastAPI()
-
-# Serve robots.txt
-@app.get("/robots.txt", response_class=FileResponse, include_in_schema=False)
+@app.get("/robots.txt", response_class=FileResponse)
 async def robots():
-    path = "static/robots.txt"
-    if os.path.exists(path):
-        return FileResponse(path, media_type="text/plain")
-    return {"detail": "robots.txt not found"}
+    return FileResponse("static/robots.txt", media_type="text/plain")
 
-# Serve sitemap.xml
-@app.get("/sitemap.xml", response_class=FileResponse, include_in_schema=False)
+@app.get("/sitemap.xml", response_class=FileResponse)
 async def sitemap():
-    path = "static/sitemap.xml"
-    if os.path.exists(path):
-        return FileResponse(path, media_type="application/xml")
-    return {"detail": "sitemap.xml not found"}
+    return FileResponse("static/sitemap.xml", media_type="application/xml")
 
-# Serve ads.txt (adding this based on your earlier question)
-@app.get("/ads.txt", response_class=FileResponse, include_in_schema=False)
+
+@app.get("/ads.txt", response_class=FileResponse)
 async def ads():
-    path = "ads.txt"
-    if os.path.exists(path):
-        return FileResponse(path, media_type="text/plain")
-    return {"detail": "ads.txt not found"}
+    return FileResponse("static/ads.txt", media_type="text/plain")
